@@ -1,6 +1,6 @@
-import React from 'react'
-import { Card, Button } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const products = [
   { id: 1, name: 'Producto 1', description: 'Descripción del producto 1' },
@@ -28,6 +28,6 @@ const ProductList = () => {
       </div>
     </div>
   );
-};
+}
 
 export default ProductList;

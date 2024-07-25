@@ -1,5 +1,5 @@
-import React from 'react'
-import {ProductDetail} from '../components/ProductDetail'
+import React from 'react';
+import ProductDetail from '../components/ProductDetail';
 
 const ProductPage = () => {
   return (
@@ -7,6 +7,6 @@ const ProductPage = () => {
       <ProductDetail />
     </div>
   );
-};
+}
 
 export default ProductPage;

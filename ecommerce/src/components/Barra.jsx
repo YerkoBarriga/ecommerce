@@ -1,9 +1,9 @@
-import React from 'react'
-import { Navbar, Container, Nav, Form, FormControl, Button } from 'react-bootstrap'
+import React from 'react';
+import { Navbar, Container, Nav, Form, FormControl, Button } from 'react-bootstrap';
 
-const NavBar = () => {
+const Barra = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar className='bg-secondary bg-gradient'   expand="lg">
       <Container>
         <Navbar.Brand href="/">E-Commerce</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -24,6 +24,6 @@ const NavBar = () => {
       </Container>
     </Navbar>
   );
-};
+}
 
-export default NavBar;
+export default Barra;

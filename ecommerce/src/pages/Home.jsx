@@ -1,5 +1,5 @@
-import React from 'react'
-import {ProductList} from '../components/ProductList'
+import React from 'react';
+import ProductList from '../components/ProductList';
 
 const Home = () => {
   return (
@@ -8,6 +8,6 @@ const Home = () => {
       <ProductList />
     </div>
   );
-};
+}
 
 export default Home;

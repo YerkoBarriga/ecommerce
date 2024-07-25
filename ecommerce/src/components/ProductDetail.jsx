@@ -1,6 +1,6 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
-import { Card, Button } from 'react-bootstrap'
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import { Container, Row, Col, Card, Button, CardBody } from 'react-bootstrap';
 
 const products = [
   { id: 1, name: 'Producto 1', description: 'Descripción del producto 1' },
@@ -17,16 +17,30 @@ const ProductDetail = () => {
   }
 
   return (
-    <div className="container mt-4">
-      <Card>
-        <Card.Body>
-          <Card.Title>{product.name}</Card.Title>
-          <Card.Text>{product.description}</Card.Text>
-          <Button variant="success">Comprar</Button>
-        </Card.Body>
-      </Card>
-    </div>
+    <Container className="mt-4">
+    <Row>
+      <Col  md={6}>
+        <Card>
+          <Card.Body>
+          <Card.Img variant="top" src={product.image} alt={product.name} />
+          </Card.Body>
+        </Card>
+      
+        
+      </Col>
+      <Col md={6}>
+        <Card>
+          <Card.Body>
+            <Card.Title>{product.name}</Card.Title>
+            <Card.Text>{product.description}</Card.Text>
+            <Card.Text><strong>Precio: {product.price}</strong></Card.Text>
+            <Button variant="success">Comprar</Button>
+          </Card.Body>
+        </Card>
+      </Col>
+    </Row>
+  </Container>
   );
-};
+}
 
 export default ProductDetail;
